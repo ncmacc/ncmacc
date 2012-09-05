@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= @title || "NCMACC" %></title>
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="header">
+      <div class="content">
+	<img src="/images/logo.png" alt="" />
+	<ul id="top-navigation">
+	  <li>
+	    <a style="border-color: #FF5;" href="#">Programs</a>
+	  </li>
+	  <li>
+	    <a href="#">About</a>
+	  </li>
+	  <li>
+	    <a style="border-color: #090;" href="#">Support</a>
+	  </li>
+	  <li>
+	    <a style="border-color: #090;" href="#">Admissions</a>
+	  </li>
+	</ul>
+      </div>
+    </div>
+    <div class="main">
+      <%= yield %>
+    </div>
+    <div class="footer">
+      <div class="content stuff">
+	[Footer]
+      </div>
+    </div>
+  </body>
+</html>

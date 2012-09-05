@@ -11,7 +11,7 @@ require 'bundler'
 Bundler.require(:default)
 
 # Application
-require 'ncmacc'
+require './ncmacc'
 
 # Pony
 Pony.options = {
@@ -20,10 +20,9 @@ Pony.options = {
         :address              => 'smtp.gmail.com',
         :port                 => '587',
         :enable_starttls_auto => true,
-        :user_name            => 'manservant@sixofhearts.us',
-        :password             => 'boilermagicmarkers',
+        :user_name            => 'noreply@ncmacc.org',
+        :password             => 'pianoframeornamentflyer',
         :authentication       => :plain,
-        :domain               => 'sixofhearts.us'
+        :domain               => 'ncmacc.org'
   }
 }
-

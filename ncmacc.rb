@@ -1,5 +1,5 @@
 class Ncmacc < Sinatra::Application
   get '/' do
-    "asdfasdfadf"
+    erb :index
   end
 end
