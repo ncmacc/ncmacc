@@ -9,7 +9,7 @@ body {
     color: #DDF;
 }
 
-.main h2 {
+.main h1, .main h2 {
     color: #DD7;
     font-weight: bold;
     font-size: 1.5em;
@@ -68,7 +68,23 @@ body {
 }
 
 .footer {
+    line-height: 1.5em;
+}
+.footer a {
+    text-decoration: none;
+    color: #77A;
+}
+.footer ul h3 a {
+    color: #449;
+}
+.footer h3 {
+    font-weight: bold;
+    color: #449;
 }
 
-h1 {
+.footer ul {
+    display: block;
+    width: 20%;
+    float: left;
+    vertical-align: top;
 }

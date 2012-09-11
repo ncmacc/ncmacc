@@ -16,8 +16,8 @@ programs = [["Music", music_programs],
             ["Community", community_programs]]
 %>
 <% programs.each do |name, program| %>
-  <h3><%= name %></h3>
   <ul>
+    <li><h3><%= name %></h3></li>
     <% program.each do |name, path| %>
       <li><a href="/programs/<%= path %>"><%= name %></a></li>
     <% end %>
