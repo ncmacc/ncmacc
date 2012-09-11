@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%= @title || "NCMACC" %></title>
+    <title><%= @title || "Northern California Music &amp; Art Culture Center" %></title>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
     <link href="/css/reset.css" rel="stylesheet" type="text/css">
     <link href="/css/main.css" rel="stylesheet" type="text/css">
@@ -51,14 +51,32 @@
 
     <div class="footer">
       <div class="content stuff">
-	<ul>
+	<ul class="first">
 	  <li><h3><a href="/">NCMACC</a></h3></li>
 	  <% [["About", "/about"], ["Board", "/about/board"], ["Faculty and Staff", "/about/faculty_and_staff"], ["Contact Us", "/about/contact_us"],
 	     ["FAQs", "/about/faqs"], ["Donate", "/donate"], ["Registration", "/registration"], ["Jobs", "/jobs"]].each do |name, path| %>
 	  <li><a href="<%= path %>"><%= name %></a></li>
 	  <% end %>
 	</ul>
-	<%= erb :"_shared/programs" %>
+	<div class="programs">
+	  <%= erb :"_shared/programs" %>
+	</div>
+	<ul class="networks">
+	  <li><h3>Follow Us</h3></li>
+	  <li><a target="_blank" href="http://www.facebook.com/pages/Northern-California-Music-Art-Culture-Center/239803094052">Facebook</a></li>
+	  <li><a target="_blank" href="http://www.twitter.com/ncmacc">Twitter</a></li>
+	  <li><a target="_blank" href="http://www.youtube.com/ncmacc">YouTube</a></li>
+	  <li><a target="_blank" href="http://blog.ncmacc.org/">Blog</a></li>
+	</ul>
+	<div class="last">
+	  <h3>Northern California Music &amp; Art Culture Center</span></h3>
+	  <p>
+	    1280 Webster St.<br/>
+	    San Francisco, CA 94115<br/>
+	    Phone &amp; Fax: (415) 440-6222<br/>
+	    Email: <a href="mailto:ncmacc@ncmacc.org">ncmacc@ncmacc.org</a><br/>
+	  </p>
+	</div>
       </div>
     </div>
   </body>
