@@ -11,6 +11,7 @@ require 'bundler'
 Bundler.require(:default)
 
 # Application
+require 'sinatra/base'
 require './ncmacc'
 
 # Pony

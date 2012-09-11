@@ -13,19 +13,19 @@
 	<a href="/"><img src="/images/logo.png" alt="" style="width: 150px" /></a>
 	<ul id="top-navigation">
 	  <li>
-	    <a id="about-link" style="" href="#">About Us</a>
+	    <a id="about-link" style="" href="/about">About Us</a>
 	  </li>
 	  <li>
-	    <a id="programs-link" href="#">Programs</a>
+	    <a id="programs-link" href="/programs">Programs</a>
 	  </li>
 	  <li>
-	    <a id="events-link" href="#">Events</a>
+	    <a id="events-link" href="/events">Events</a>
 	  </li>
 	  <li>
-	    <a id="registration-link" href="#">Registration</a>
+	    <a id="registration-link" href="/registration">Registration</a>
 	  </li>
 	  <li>
-	    <a id="donate-link" href="#">Donate</a>
+	    <a id="donate-link" href="/donate">Donate</a>
 	  </li>
 	</ul>
       </div>
@@ -35,7 +35,14 @@
     </div>
     <div class="footer">
       <div class="content stuff">
-	[Footer]
+	<h3><a href="/">NCMACC</a></h3>
+	<ul>
+	  <% [["About", "/about"], ["Board", "/about/board"], ["Faculty and Staff", "/about/faculty_and_staff"], ["Contact Us", "/about/contact_us"],
+	     ["FAQs", "/about/faqs"], ["Donate", "/donate"], ["Registration", "/registration"], ["Jobs", "/jobs"]].each do |name, path| %>
+	    <li><a href="<%= path %>"><%= name %></a></li>
+	  <% end %>
+	</ul>
+	<%= erb :"_shared/programs" %>
       </div>
     </div>
   </body>
