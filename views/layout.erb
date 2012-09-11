@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title><%= @title || "NCMACC" %></title>
-    <link href="http://fonts.googleapis.com/css?family=Actor" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
     <link href="/css/reset.css" rel="stylesheet" type="text/css">
     <link href="/css/main.css" rel="stylesheet" type="text/css">
   </head>
@@ -30,16 +30,32 @@
 	</ul>
       </div>
     </div>
+    <div class="main-across">
+      <div class="content">
+	<p>
+	  Fostering community through music and art.
+	</p>
+      </div>
+    </div>
     <div class="main">
       <%= yield %>
     </div>
+    <div class="main-across">
+      <div class="content">
+	<p>
+	  Stay up to date. Follow us: 
+	</p>
+      </div>
+    </div>
+
+
     <div class="footer">
       <div class="content stuff">
 	<h3><a href="/">NCMACC</a></h3>
 	<ul>
 	  <% [["About", "/about"], ["Board", "/about/board"], ["Faculty and Staff", "/about/faculty_and_staff"], ["Contact Us", "/about/contact_us"],
 	     ["FAQs", "/about/faqs"], ["Donate", "/donate"], ["Registration", "/registration"], ["Jobs", "/jobs"]].each do |name, path| %>
-	    <li><a href="<%= path %>"><%= name %></a></li>
+	  <li><a href="<%= path %>"><%= name %></a></li>
 	  <% end %>
 	</ul>
 	<%= erb :"_shared/programs" %>

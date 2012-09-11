@@ -1,11 +1,23 @@
 body {
-    font-family: 'Actor', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background-color: #CCF;
 }
 
 .main {
     background-color: #77A;
-    color: #FFF;
+    padding: 10px 0;
+    color: #DDF;
+}
+
+.main h2 {
+    color: #DD7;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.main p {
+    line-height: 1.5em;
 }
 
 .header {
@@ -34,12 +46,12 @@ body {
 }
 
 #top-navigation a {
-    margin: 0 0 10px 15px;
+    margin: 0 0 5px 15px;
     color: #000;
     text-decoration: none;
     display: block;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #top-navigation a:hover { color: #FFF; }
@@ -51,7 +63,7 @@ body {
 
 .main-across {
     background-color: #99C;
-    padding: 5px 0;
+    padding: 10px 0;
     color: #DDF;
 }
 
