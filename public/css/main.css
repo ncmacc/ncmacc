@@ -10,7 +10,7 @@ body {
 }
 
 .main h1, .main h2 {
-    color: #DD7;
+    color: #114;
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -47,7 +47,7 @@ body {
 
 #top-navigation a {
     margin: 0 0 5px 15px;
-    color: #000;
+    color: #449;
     text-decoration: none;
     display: block;
     padding: 10px;
