@@ -63,7 +63,7 @@ body {
     padding: 10px 0;
 }
 
-#top-navigation li {
+#top-navigation li.item {
     float: left;
 }
 
@@ -73,7 +73,7 @@ body {
     bottom: -10px;
 }
 
-#top-navigation a {
+#top-navigation .item a.top-link {
     margin: 0 0 5px 15px;
     color: #449;
     text-decoration: none;
@@ -82,9 +82,9 @@ body {
     border-radius: 10px;
 }
 
-#top-navigation a:hover { color: #FFF; }
-#about-link:hover { background-color: #E66; }
-#programs-link:hover { background-color: #EA3; }
+#top-navigation a.top-link:hover, #top-navigation a.top-link.selected { color: #FFF; }
+a.top-link#about-link.selected { background-color: #E66; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 #events-link:hover { background-color: #494; }
 #registration-link:hover { background-color: #66C; }
 #donate-link:hover { background-color: #B3F; }
@@ -177,4 +177,48 @@ body {
 
 .split .right p {
     font-size: 0.8em;
+}
+
+#about-dropdown, #programs-dropdown {
+    background-color: #EA3;
+    z-index: 2;
+    position: absolute;
+    top: 36px;
+    left: 100px;
+    padding: 10px;
+    width: 366px;
+    color: #333;
+    font-size: 10pt;
+    border-radius: 10px;
+    display: none;
+}
+
+#about-dropdown {
+    left: 0;
+    background-color: #E66;
+    width: 150px;
+}
+
+#about-dropdown h3, #programs-dropdown h3 {
+    font-weight: bold;
+    color: #FFF;
+}
+
+#about-dropdown a, #programs-dropdown a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#about-dropdown a:hover, #programs-dropdown a:hover {
+    text-decoration: underline;
+}
+
+#programs-dropdown ul {
+    width: 50%;
+    float: left;
+    min-height: 80px;
+}
+
+#about-dropdown ul li, #programs-dropdown ul li {
+    margin-bottom: 5px;
 }

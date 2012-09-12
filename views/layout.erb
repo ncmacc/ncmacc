@@ -8,26 +8,41 @@
     <link href="/css/reset.css" rel="stylesheet" type="text/css">
     <link href="/css/clearfix.css" rel="stylesheet" type="text/css">
     <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/application.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="header">
       <div class="content">
 	<a href="/"><img src="/images/logo.png" alt="" style="width: 150px" /></a>
 	<ul id="top-navigation">
-	  <li>
-	    <a id="about-link" style="" href="/about">About Us</a>
+	  <li class="item">
+	    <a class="top-link" id="about-link" style="" href="/about">About Us</a>
+	    <div id="about-dropdown">
+	      <ul>
+		<% [["Board", "/about/board"],
+		   ["Faculty and Staff", "/about/faculty_and_staff"],
+		   ["Contact Us", "/about/contact_us"],
+		   ["FAQs", "/about/faqs"], ["Jobs", "/jobs"]].each do |name, path| %>
+		  <li><a href="<%= path %>"><%= name %></a></li>
+		<% end %>
+	      </ul>
+	    </div>
 	  </li>
-	  <li>
-	    <a id="programs-link" href="/programs">Programs</a>
+	  <li class="item">
+	    <a class="top-link" id="programs-link" href="/programs">Programs</a>
+	    <div id="programs-dropdown" class="cf">
+	      <%= erb :"_shared/programs" %>
+	    </div>
 	  </li>
-	  <li>
-	    <a id="events-link" href="/events">Events</a>
+	  <li class="item">
+	    <a class="top-link" id="events-link" href="/events">Events</a>
 	  </li>
-	  <li>
-	    <a id="registration-link" href="/registration">Registration</a>
+	  <li class="item">
+	    <a class="top-link" id="registration-link" href="/registration">Registration</a>
 	  </li>
-	  <li>
-	    <a id="donate-link" href="/donate">Donate</a>
+	  <li class="item">
+	    <a class="top-link" id="donate-link" href="/donate">Donate</a>
 	  </li>
 	</ul>
       </div>
