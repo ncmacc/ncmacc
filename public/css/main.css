@@ -5,8 +5,30 @@ body {
 
 .main {
     background-color: #77A;
-    padding: 10px 0;
     color: #DDF;
+}
+
+#slideshow {
+    background-image: url("/images/on-the-rocks.jpg");
+    height: 360px;
+    width: 100%;
+    min-width: 960px;
+    background-size: 100%;
+}
+
+#info-box {
+    background-color: rgba(0,0,0,0.7);
+    width: 440px;
+    border: 3px solid #99C;
+    margin: 210px 0 0 520px;
+    padding: 10px;
+    height: 100px;
+}
+
+#info-box h4 {
+    color: #FFF;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .main h1, .main h2 {
