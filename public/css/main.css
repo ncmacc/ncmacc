@@ -9,6 +9,10 @@ body {
     color: #DDF;
 }
 
+.main a {
+    color: #AAF;
+}
+
 #slideshow {
     background-image: url("/images/ncmacc-performance.jpg");
     height: 360px;
@@ -22,9 +26,9 @@ body {
     background-color: rgba(0,0,0,0.85);
     width: 440px;
     border: 3px solid #99C;
-    margin: 210px 0 0 -10px;
+    margin: 180px 0 0 -10px;
     padding: 10px;
-    height: 106px;
+    height: 128px;
 }
 
 #info-box h4 {
@@ -36,7 +40,7 @@ body {
 .content h1, .content h2 {
     color: #114;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin-bottom: 10px;
 }
 
@@ -155,4 +159,22 @@ body {
     font-size: 8pt;
     width: 290px;
     text-align: right;
+}
+
+.split .left {
+    width: 530px;
+    padding: 10px 10px 10px 0;
+    margin-right: 10px;
+    float: left;
+}
+
+.split .right {
+    width: 390px;
+    padding: 10px;
+    background-color: #558;
+    float: left;
+}
+
+.split .right p {
+    font-size: 0.8em;
 }
