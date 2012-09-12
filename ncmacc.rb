@@ -1,5 +1,6 @@
 class Ncmacc < Sinatra::Base
   get '/' do
+    @show_large_icons = true
     erb :index
   end
 
