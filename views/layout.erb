@@ -32,7 +32,15 @@
 	  <li class="item">
 	    <a class="top-link" id="programs-link" href="/programs">Programs</a>
 	    <div id="programs-dropdown" class="cf">
-	      <%= erb :"_shared/programs" %>
+	      <% for name, programs, description in PROGRAMS %>
+	        <ul class="<%= name.downcase.gsub(" ", "-") %>">
+		  <li><h3><%= name %></h3></li>
+		  <li><h4><%= description %></h4></li>
+		  <% programs.each do |name, path| %>
+		  <li><a href="/programs/<%= path %>"><%= name %></a></li>
+		  <% end %>
+		</ul>
+	      <% end %>
 	    </div>
 	  </li>
 	  <li class="item">
@@ -100,7 +108,14 @@
 	  <% end %>
 	</ul>
 	<div class="programs">
-	  <%= erb :"_shared/programs" %>
+	  <% PROGRAMS.each do |name, program| %>
+	  <ul>
+	    <li><h3><%= name %></h3></li>
+	    <% program.each do |name, path| %>
+	    <li><a href="/programs/<%= path %>"><%= name %></a></li>
+	    <% end %>
+	  </ul>
+	  <% end %>
 	</div>
 	<ul class="networks">
 	  <li><h3>Networks</h3></li>

@@ -141,7 +141,7 @@ a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-r
 }
 
 .footer .programs ul {
-    width: 110px;
+    width: 146px;
     margin-right: 10px;
 }
 
@@ -184,9 +184,9 @@ a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-r
     z-index: 2;
     position: absolute;
     top: 36px;
-    left: 100px;
+    left: -100px;
     padding: 10px;
-    width: 366px;
+    width: 700px;
     color: #333;
     font-size: 10pt;
     border-radius: 10px;
@@ -204,6 +204,14 @@ a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-r
     color: #FFF;
 }
 
+#about-dropdown h4, #programs-dropdown h4 {
+    font-style: italic;
+    color: #FF7;
+    margin-bottom: 10px;
+}
+
+
+
 #about-dropdown a, #programs-dropdown a {
     color: #FFF;
     text-decoration: none;
@@ -214,9 +222,18 @@ a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-r
 }
 
 #programs-dropdown ul {
-    width: 50%;
     float: left;
     min-height: 80px;
+}
+
+#programs-dropdown .music {
+    width: 25%;
+}
+#programs-dropdown .performing-arts {
+    width: 40%;
+}
+#programs-dropdown .wreach-out {
+    width: 35%;
 }
 
 #about-dropdown ul li, #programs-dropdown ul li {
