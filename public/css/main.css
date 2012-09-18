@@ -239,3 +239,8 @@ a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-r
 #about-dropdown ul li, #programs-dropdown ul li {
     margin-bottom: 5px;
 }
+
+.content h2 {
+    margin-top: 20px;
+    color: #447;
+}
