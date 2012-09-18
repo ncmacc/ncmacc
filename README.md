@@ -11,8 +11,9 @@ Center.
 
 Team
 ----
-- [Paul S. Chun](https://github.com/sixofhearts)
-- [David Peng](https://github.com/davpeng)
 - Ursula Benesch
+- [Paul S. Chun](https://github.com/sixofhearts)
+- Ben Lew
+- [David Peng](https://github.com/davpeng)
 - Anne Matsuno
-
+- Anna Wang
