@@ -242,8 +242,53 @@ a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-r
 
 .content h2 {
     margin-top: 20px;
-    color: #447;
+    color: #336;
+    font-size: 1.15em;
 }
+
+h2.first {
+    margin-top: 0;
+}
+
+
+.split-70-30 .left {
+    width: 700px;
+    float: left;
+}
+
+.split-70-30 .right {
+    width: 230px;
+    float: left;
+    background-color: #558;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.copy p {
+    margin-bottom: 10px;
+}
+
+ul.program-details li {
+    list-style-type: square;
+    margin: 0 0 10px 20px;
+    font-size: 0.8em;
+}
+
+.registration-link {
+}
+
+.registration-link a {
+    float: left;
+    background-color: #99C;
+    border-radius: 10px;
+    padding: 15px 10px 15px 48px;
+    background-image: url("/images/icons/pdf-sm.png");
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    margin: 10px 0;
+}
+
+.registration-link a { color: #FFF; margin-right: 5px; }
 
 /*--- Anna event work */
 a.top-link#events-link.selected { background-color: #494; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
