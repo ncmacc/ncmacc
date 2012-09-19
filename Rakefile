@@ -1,3 +1,3 @@
 task :deploy do
-  puts `ssh ppp.sixofhearts.us "cd /srv/web/ncmacc; git pull"`
+  puts `ssh sixofhearts@ppp.sixofhearts.us "cd /srv/web/ncmacc; git pull"`
 end
