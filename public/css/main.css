@@ -244,3 +244,47 @@ a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-r
     margin-top: 20px;
     color: #447;
 }
+
+/*--- Anna event work */
+a.top-link#events-link.selected { background-color: #494; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+#event-dropdown{
+    background-color: #494;
+    z-index: 2;
+    position: absolute;
+    top: 36px;
+    left: -100px;
+    padding: 10px;
+    width: 700px;
+    color: #333;
+    font-size: 10pt;
+    border-radius: 10px;
+    display: none;
+}
+
+#event-dropdown {
+    left: 200px;
+    background-color: #494;
+    width: 150px;
+}
+
+#event-dropdown h3 {
+    font-weight: bold;
+    color: #FFF;
+}
+
+#event-dropdown h4 {
+    font-style: italic;
+    color: #FF7;
+    margin-bottom: 10px;
+}
+
+
+#event-dropdown a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#event-dropdown a:hover {
+    text-decoration: underline;
+}
