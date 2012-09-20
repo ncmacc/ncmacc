@@ -1,0 +1,66 @@
+<div class="content stuff">
+  <h1>NCMACC Team</h1>
+  <h2>Faculty</h2>
+  <ul class="cf">
+    <% for faculty_member in @faculty %>
+      <li class="person cf">
+	<div class="portrait">
+	  <img src="<%= faculty_member.image %>" alt="" title="<%= faculty_member.name %>" />
+	</div>
+	<div class="biography">
+	  <ul>
+	    <li><h3><%= faculty_member.name %></h3></li>
+	    <li><h4><%= faculty_member.courses_taught.sort.join(", ") %></h4></li>
+	    <li>
+	      <p>
+		<%= faculty_member.education.join("<br/>") %>
+	      </p>
+	    </li>
+	  </ul>
+	</div>
+      </li>
+    <% end %>
+  </ul>
+  <h2>Staff</h2>
+    <ul class="cf">
+    <% for staff_worker in @staff %>
+      <li class="person cf">
+	<div class="portrait">
+	  <img src="<%= staff_worker.image %>" alt="" title="<%= staff_worker.name %>" />
+	</div>
+	<div class="biography">
+	  <ul>
+	    <li><h3><%= staff_worker.name %></h3></li>
+	    <li><h4><%= staff_worker.title %></h4></li>
+	    <li>
+	      <p>
+		<%= staff_worker.education.join("<br/>") %>
+	      </p>
+	    </li>
+	  </ul>
+	</div>
+      </li>
+    <% end %>
+  </ul>
+
+  <ul>
+    <% for volunteer in @volunteers %>
+      <li>
+	<div class="portrait">
+	  <img src="<%= volunteer.image %>" alt="" title="<%= volunteer.name %>" />
+	</div>
+	<div class="biography">
+	  <ul>
+	    <li><h3><%= volunteer.name %></h3></li>
+	    <li><h4><%= volunteer.title %></h4></li>
+	    <li>
+	      <p>
+		<%= volunteer.education.join("<br/>") %>
+	      </p>
+	    </li>
+	  </ul>
+	</div>
+      </li>
+    <% end %>
+  </ul>
+</div>

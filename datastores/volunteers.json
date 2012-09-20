@@ -1,0 +1,23 @@
+[{"first_name":"Young Shin",
+  "last_name":"Kim",
+  "image":"/images/logo.png",
+  "title":"Office Treasurer",
+  "education":"M.S. Taxation, San Francisco State University"},
+
+ {"first_name":"Pearl",
+  "last_name":"Chun",
+  "image":"/images/volunteers/chun-pearl.jpg",
+  "title":"Office Manager and WREACH OUT Coordinator",
+  "education":"B.A. University of California, Davis"},
+
+ {"first_name":"Emi Bertha",
+  "last_name":"Nakamura",
+  "image":"/images/logo.png",
+  "title":"Photographer",
+  "education":"College Undergraduate"},
+
+ {"first_name":"Amanda Leah",
+  "last_name":"Navarrete",
+  "image":"/images/logo.png",
+  "title":"Office Administrator and Graphic Designer",
+  "education":"College Undergraduate"}]

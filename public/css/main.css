@@ -290,6 +290,40 @@ ul.program-details li {
 
 .registration-link a { color: #FFF; margin-right: 5px; }
 
+li.person {
+    float: left;
+    width: 480px;
+    height: 7em;
+}
+
+.person .portrait {
+    padding: 0 10px 0 0;
+    height: 90px;
+    width: 90px;
+    float: left;
+}
+
+.person .portrait img {
+    width: 90px;
+}
+
+.person .biography {
+    font-size: 11pt;
+}
+.person .biography h3 {
+    color: #FFF;
+}
+
+.person .biography h3, .person .biography h4, .person .biography p {
+    line-height: 1em;
+    margin-bottom: 0.5em;
+}
+
+.person .biography p {
+    font-size: 9pt;
+    line-height: 1.5em;
+}
+
 /*--- Anna event work */
 a.top-link#events-link.selected { background-color: #494; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 

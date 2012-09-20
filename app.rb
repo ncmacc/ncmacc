@@ -14,6 +14,7 @@ Bundler.require(:default)
 require 'sinatra/base'
 require './ncmacc'
 require './models/feedback_response'
+require './models/worker'
 
 # Pony
 Pony.options = {

@@ -4,6 +4,14 @@ class Ncmacc < Sinatra::Base
     erb :index
   end
 
+  get '/about/faculty_and_staff' do
+    @faculty = Worker.pull("faculty")
+    @staff = Worker.pull("staff")
+    @volunteers = []
+
+    erb '/about/faculty_and_staff'.to_sym
+  end
+
   get '/:controller/:page' do
     erb ("#{params[:controller]}/#{params[:page]}").to_sym
   end
