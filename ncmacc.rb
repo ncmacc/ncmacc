@@ -8,6 +8,19 @@ class Ncmacc < Sinatra::Base
     erb ("#{params[:controller]}/#{params[:page]}").to_sym
   end
 
+  post '/about/contact_us' do
+    begin
+      @feedback = FeedbackResponse.new(params[:feedback])
+      @feedback.validate!
+
+      @feedback.deliver!
+      @message = "Your feedback was sent successfully. Please allow up to a few days for a response."
+    rescue
+      @message = "There was a problem in sending your feedback. Please make sure the information in your form is filled out and try again."
+    end
+    erb :"about/contact_us"
+  end
+
   get '/:page' do
     erb params[:page].to_sym
   end

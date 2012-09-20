@@ -13,6 +13,7 @@ Bundler.require(:default)
 # Application
 require 'sinatra/base'
 require './ncmacc'
+require './models/feedback_response'
 
 # Pony
 Pony.options = {
@@ -21,9 +22,9 @@ Pony.options = {
         :address              => 'smtp.gmail.com',
         :port                 => '587',
         :enable_starttls_auto => true,
-        :user_name            => 'noreply@ncmacc.org',
-        :password             => 'pianoframeornamentflyer',
+        :user_name            => 'manservant@sixofhearts.us',
+        :password             => 'boilermagicmarkers',
         :authentication       => :plain,
-        :domain               => 'ncmacc.org'
+        :domain               => 'sixofhearts.us'
   }
 }

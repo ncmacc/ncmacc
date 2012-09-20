@@ -1,3 +1,9 @@
+<% if @message %>
+<div class="content stuff">
+  <h2><%= @message %></h2>
+</div>
+<% end %>
+
 <div class="content stuff">
   <h1>Contact Us</h1>
   <p>
@@ -26,10 +32,10 @@
   <p>You may also use the form below to contact us.</p>
   <form method="post">
     <table cellpadding="5" cellspacing="5">
-      <tr><th nowrap width="160" align="left" style="height:30px;">Your Name:</th><td> <input size="35" name="yourname" value=""> </td></tr>
-      <tr><th nowrap align="left" style="height:30px;">Your E-mail Address:</th><td> <input size="35" name="youremail" value=""></td> </tr>
-      <tr><th colspan="2" align="left" style="height:30px;">Your Message:</th></tr>
-      <tr><td colspan="2"> <textarea cols="50" rows="7" name="yourmessage">Enter your message here...</textarea> </td></tr>
+      <tr><th nowrap width="160" align="left" style="height:30px;">Name:</th><td><input size="35" name="feedback[name]" value=""> </td></tr>
+      <tr><th nowrap align="left" style="height:30px;">E-mail Address:</th><td><input size="35" name="feedback[email_address]" value=""></td> </tr>
+      <tr><th colspan="2" align="left" style="height:30px;">Message:</th></tr>
+      <tr><td colspan="2"> <textarea cols="50" rows="7" name="feedback[message]">Enter your message here...</textarea> </td></tr>
       <tr><td colspan="2" align="right" style="text-align:right;"><input  type="submit" name="send" value="Send"></td></tr>
     </table>
   </form>
