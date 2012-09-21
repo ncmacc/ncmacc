@@ -1,6 +1,46 @@
 [{"first_name":"Hagen",
   "last_name":"Choi",
-  "image":"",
-  "position":"San Francisco Conservatory of Music,
-  "job":["President of Tower Tour", "Optima Investment"]},
+  "position":"Board Chair",
+  "job":"President of Tower Tour, Optima Investment"},
+  
+  {"first_name":"Young",
+  "last_name":"Moore",
+  "position":"Secretary",
+  "job":"President of Tower Tour, Optima Investment"},
+  
+  {"first_name":"Doug",
+  "last_name":"Chang",
+  "position":"Executive Committee Chair",
+  "job":"President of Calyx Software Company"},
+  
+  {"first_name":"Timothy H.",
+  "last_name":"Han",
+  "position":"Development Commettee Chair",
+  "job":"Dentist (D.D.S.)"},
+  
+  {"first_name":"John",
+  "last_name":"Rim",
+  "position":"Finance Committee Chair",
+  "job":"Vice President of Product Operations Finance, Bay Area Genentech, INC."},
+  
+  {"first_name":"SeungKae",
+  "last_name":"Lim",
+  "position":"Board Member",
+  "job":"President of Korean Christian Times"},
+  
+  {"first_name":"DongKook",
+  "last_name":"Chang",
+  "position":"Board Member",
+  "job":"President of Hyundai DigiTech, Seoul, Korea"},
+  
+  {"first_name":"Duke K.",
+  "last_name":"Amaniampong",
+  "position":"Executive Committee Member",
+  "job":"San Francisco Law School Professor"},
+  
+  {"first_name":"Michelle",
+  "last_name":"Nip",
+  "position":"Student Member",
+  "job":"UC Davis Student"}
+  
 ]

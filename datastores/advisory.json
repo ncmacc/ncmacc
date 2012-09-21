@@ -1,6 +1,15 @@
 [{"first_name":"Mack",
   "last_name":"McCray",
-  "image":"",
   "job":"San Francisco Conservatory of Music",
   "title":"Piano Department Chair"},
+  
+  {"first_name":"NakHong",
+  "last_name":"Sung",
+  "job":"Korean Historian",
+  "title":"Kyungki Do Museum"},
+  
+  {"first_name":"Jimmy",
+  "last_name":"Cheong",
+  "job":"Journalist",
+  "title":"The Weekly Morning Korean News"}
 ]

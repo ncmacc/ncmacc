@@ -6,7 +6,7 @@ class Ncmacc < Sinatra::Base
 
   get '/about/board' do
 	@advisory = Worker.pull ("advisory")
-	@board = Worker.pull("Board")
+	@board = Worker.pull("board")
 	
 	
 	erb '/about/board'.to_sym

@@ -7,10 +7,10 @@
 	<div class="biography">
 	  <ul>
 	    <li><h3><%= advisory_member.name %></h3></li>
-	    <li><h4><%= advisory_member.position.sort.join(", ") %></h4></li>
+	    <li><h4><%= advisory_member.job %></h4></li>
 	    <li>
 	      <p>
-		<%= advisory_member.job.join("<br/>") %>
+		<%= advisory_member.title %>
 	      </p>
 	    </li>
 	  </ul>
@@ -26,10 +26,10 @@
 	<div class="biography">
 	  <ul>
 	    <li><h3><%= board_member.name %></h3></li>
-	    <li><h4><%= board member.position %></h4></li>
+	    <li><h4><%= board_member.position %></h4></li>
 	    <li>
 	      <p>
-		<%= board_member.job.join("<br/>") %>
+		<%= board_member.job %>
 	      </p>
 	    </li>
 	  </ul>

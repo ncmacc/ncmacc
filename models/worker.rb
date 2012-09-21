@@ -1,5 +1,5 @@
 class Worker
-  attr_accessor :first_name, :last_name, :courses_taught, :education, :image, :title
+  attr_accessor :first_name, :last_name, :courses_taught, :education, :image, :title, :job, :position
   
 
   def initialize(options={})
@@ -15,7 +15,7 @@ class Worker
   end
 
   def self.pull(worker_type)
-    return [] unless %w(faculty staff volunteers advisors board ).include?(worker_type)
+    return [] unless %w(faculty staff volunteers advisory board ).include?(worker_type)
 
     file = File.open("datastores/#{worker_type}.json")
     worker_json_array = JSON.parse(file.read)
