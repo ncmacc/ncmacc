@@ -367,3 +367,19 @@ a.top-link#events-link.selected { background-color: #494; border-bottom-left-rad
 #event-dropdown a:hover {
     text-decoration: underline;
 }
+
+#recital-column1, #fundraiser-column1 {
+    float:left;
+    width: 33%;
+}
+
+#recital-column2, #fundraiser-column2 {
+    float:left;
+    width: 33%;
+}
+
+#recital-column3, #fundraiser-column3 {
+    float:left;
+    width: 33%;
+}
+
