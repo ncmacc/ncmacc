@@ -13,11 +13,11 @@ $(document).ready(function() {
 	$("#programs-link").removeClass("selected");
 	$("#programs-dropdown").hide();
     });
-    $("#events-link").parent().hover(function() {
-	$("#events-link").addClass("selected");
+    $("#event-link").parent().hover(function() {
+	$("#event-link").addClass("selected");
 	$("#event-dropdown").show();
     }, function() {
-	$("#events-link").removeClass("selected");
+	$("#event-link").removeClass("selected");
 	$("#event-dropdown").hide();
     });
 });

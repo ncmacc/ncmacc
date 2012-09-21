@@ -325,7 +325,7 @@ li.person {
 }
 
 /*--- Anna event work */
-a.top-link#events-link.selected { background-color: #494; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+a.top-link#event-link.selected { background-color: #494; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 
 #event-dropdown{
     background-color: #494;
@@ -342,9 +342,9 @@ a.top-link#events-link.selected { background-color: #494; border-bottom-left-rad
 }
 
 #event-dropdown {
-    left: 200px;
+    left: 0;
     background-color: #494;
-    width: 150px;
+    width: 350px;
 }
 
 #event-dropdown h3 {
@@ -358,7 +358,6 @@ a.top-link#events-link.selected { background-color: #494; border-bottom-left-rad
     margin-bottom: 10px;
 }
 
-
 #event-dropdown a {
     color: #FFF;
     text-decoration: none;
@@ -366,6 +365,23 @@ a.top-link#events-link.selected { background-color: #494; border-bottom-left-rad
 
 #event-dropdown a:hover {
     text-decoration: underline;
+}
+
+#event-dropdown ul {
+    float: left;
+    min-height: 80px;
+}
+
+#event-dropdown .recital {
+    width: 50%;
+}
+
+#event-dropdown .fundraiser {
+    width: 50%;
+}
+
+#event-dropdown ul li {
+    margin-bottom: 5px;
 }
 
 #recital-column1, #fundraiser-column1 {
