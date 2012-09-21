@@ -4,6 +4,14 @@ class Ncmacc < Sinatra::Base
     erb :index
   end
 
+  get '/about/board' do
+	@advisory = Worker.pull ("advisory")
+	@board = Worker.pull("Board")
+	
+	
+	erb '/about/board'.to_sym
+  end
+	
   get '/about/faculty_and_staff' do
     @faculty = Worker.pull("faculty")
     @staff = Worker.pull("staff")
