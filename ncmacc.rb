@@ -45,8 +45,8 @@ end
 MUSIC_PROGRAMS = [["Studio Program", "studio_program"],
                   ["Chamber Music", "chamber_music"]]
 
-PERFORMING_ARTS_PROGRAMS = [["Korean-American Youth Musical Group", "korean_american_youth_musical_group"],
-                            ["Fillmore Youth, Drum and Dance", "fillmore_youth_drum_and_dance"]]     
+PERFORMING_ARTS_PROGRAMS = [["Korean-American Youth Musical Group", "korean_american_youth_musical_group"]]
+#                            ["Fillmore Youth, Drum and Dance", "fillmore_youth_drum_and_dance"]]     
 
 WREACH_OUT_PROGRAMS = [["Children's Chorus", "childrens_chorus"],
                        ["Group Art Lessons", "group_art_lessons"],
