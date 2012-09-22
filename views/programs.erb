@@ -1,1 +1,17 @@
 <% @title = "Programs" %>
+
+<div class="content stuff">
+  <h1>NCMACC Programs</h1>
+  <p>
+    We are proud to offer the following programs:
+  </p>
+  <% for name, programs, description in PROGRAMS %>
+  <ul class="<%= name.downcase.gsub(" ", "-") %>">
+    <li><h2><%= name %></h2></li>
+    <li><h4><%= description %></h4></li>
+    <% programs.each do |name, path| %>
+    <li><p><a href="/programs/<%= path %>"><%= name %></a></p></li>
+    <% end %>
+  </ul>
+  <% end %>
+</div>
