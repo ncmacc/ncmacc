@@ -413,45 +413,34 @@ a.top-link#event-link.selected { background-color: #494; border-bottom-left-radi
     margin-right: 0;
 }
 
-.program-column .description {
-    background-image: url("/images/studio-program.jpg");
-    height: 200px;
-    position: relative;
-}
-.program-column .description.performing-arts { background-image: url("/images/kaymg.jpg") }
-.program-column .description.community { background-image: url("/images/childrens-chorus.jpg") }
-
-.program-column .description p {
-    font-size: 0.8em;
-    background-color: rgba(0,0,0,0.8);
-    padding: 0.4em;
-    position: absolute;
-    bottom: 0;
-}
-
 .program-listing li {
     margin-top: 10px;
-    font-size: 0.8em;
     line-height: 1em;
-    padding-bottom: 1.5em;
-    border-bottom: 1px solid #99C;
-
+    margin-bottom: 1em;
 }
 
-.program-listing p {
-    padding-left: 1em;
+.program-listing .thumbnail {
+    float: left;
+    margin-right: 10px;
+    height: 90px;
+    width: 90px;
+}
+
+.program-listing .description {
+    float: left;
+    width: 193px;
+}
+
+.description p {
+    font-size: 0.8em;
 }
 
 .program-listing li.last {
-    padding-bottom: 0;
-    border-bottom: 0;
+    margin-bottom: 0;
 }
 
 .program-listing li h3 {
-    font-size: 1.25em;
-    line-height: 1.75em;
+    font-size: 1em;
+    margin-bottom: 0.5em;
 }
 
-.program-listing li h3 a {
-    text-decoration: none;
-}
