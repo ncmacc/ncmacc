@@ -1,17 +1,84 @@
-<% @title = "Programs" %>
+<% @title = "Our Programs" %>
 
 <div class="content stuff">
-  <h1>NCMACC Programs</h1>
+  <h1><%= @title %></h1>
   <p>
-    We are proud to offer the following programs:
+    Our organization's core mission is to provide educational programs in music and art to our community. We currently offer the following programs:
   </p>
-  <% for name, programs, description in PROGRAMS %>
-  <ul class="<%= name.downcase.gsub(" ", "-") %>">
-    <li><h2><%= name %></h2></li>
-    <li><h4><%= description %></h4></li>
-    <% programs.each do |name, path| %>
-    <li><p><a href="/programs/<%= path %>"><%= name %></a></p></li>
-    <% end %>
+</div>
+<div class="content stuff">
+  <ul class="cf">
+    <li class="program-column">
+      <h2 class="first">Music</h2>
+      <div class="description music">
+	<p>Lessons and courses for both adults and children of all skill levels.</p>
+      </div>
+      <ul class="program-listing">
+	<li>
+	  <h3><a href="/programs/studio_program">Studio Program</a></h3>
+	  <p>
+	    Individualized lessons with award-winning instructors.
+	  </p>
+	</li>
+	<li class="last">
+	  <h3><a href="/programs/chamber_music">Chamber Music</a></h3>
+	  <p>
+	    Ensemble of youth classical music performers.
+	  </p>
+	</li>
+      </ul>
+    </li>
+    <li class="program-column">
+      <h2 class="first">Performing Arts</h2>
+      <div class="description performing-arts">
+	<p>Programs to develop students' abilities and increase knowledge in the performing arts.</p>
+      </div>
+      <ul class="program-listing">
+	<li class="last">
+	  <h3><a href="/programs/korean_american_youth_musical_group">Korean-American Youth Musical Group</a></h3>
+	  <p>
+	    Youth performing arts group specializing in Korean traditional performances.
+	  </p>
+	</li>
+      </ul>
+    </li>
+    <li class="program-column last">
+      <h2 class="first">Community</h2>
+      <div class="description community">
+	<p>Free educational programs for youths of San Francisco.</p>
+      </div>
+      <ul class="program-listing">
+	<li>
+	  <h3><a href="/programs/childrens_chorus">Children's Chorus</a></h3>
+	  <p>
+	    Free group voice lessons and performances for San Francisco youths.
+	  </p>
+	</li>
+	<li>
+	  <h3><a href="/programs/group_art_lessons">Group Art Lessons</a></h3>
+	  <p>
+	    Free group art lessons for San Francisco youths.
+	  </p>
+	</li>
+	<li>
+	  <h3><a href="/programs/group_piano_lessons">Group Piano Lessons</a></h3>
+	  <p>
+	    Free group piano lessons and recitals for San Francisco youths.
+	  </p>
+	</li>
+	<li>
+	  <h3><a href="/programs/taekwondo">Taekwondo</a></h3>
+	  <p>
+	    Free group taekwondo lessons for San Francisco youths.
+	  </p>
+	</li>
+	<li class="last">
+	  <h3><a href="/programs/youth_development">Youth Development</a></h3>
+	  <p>
+	    Free leadership and skills development program for San Francisco youths.
+	  </p>
+	</li>
+      </ul>
+    </li>
   </ul>
-  <% end %>
 </div>
