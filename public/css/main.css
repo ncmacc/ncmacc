@@ -377,7 +377,7 @@ a.top-link#event-link.selected { background-color: #494; border-bottom-left-radi
 }
 
 #event-dropdown .fundraiser {
-    width: 50%;
+    width: 100%;
 }
 
 #event-dropdown ul li {
