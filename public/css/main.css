@@ -184,7 +184,7 @@ a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-r
     z-index: 2;
     position: absolute;
     top: 36px;
-    left: -100px;
+    left: -220px;
     padding: 10px;
     width: 700px;
     color: #333;
@@ -232,7 +232,7 @@ a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-r
 #programs-dropdown .performing-arts {
     width: 40%;
 }
-#programs-dropdown .wreach-out {
+#programs-dropdown .community {
     width: 35%;
 }
 
