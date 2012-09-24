@@ -401,16 +401,15 @@ a.top-link#event-link.selected { background-color: #494; border-bottom-left-radi
 
 .program-column {
     float: left;
-    width: 455px;
-    padding: 10px;
-    background-color: #558;
+    width: 475px;
+    padding: 10px 0;
 }
 
 .program-column.first {
     margin: 0 10px 0 0;
 }
 .program-column.last {
-    margin: 10px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 .program-listing li {
@@ -443,4 +442,10 @@ a.top-link#event-link.selected { background-color: #494; border-bottom-left-radi
     font-size: 1em;
     margin-bottom: 0.5em;
 }
+
+.program-listing li h3 a {
+    text-decoration: none;
+    color: #FFF;
+}
+
 
