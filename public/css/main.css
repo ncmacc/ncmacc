@@ -401,16 +401,16 @@ a.top-link#event-link.selected { background-color: #494; border-bottom-left-radi
 
 .program-column {
     float: left;
-    width: 293px;
+    width: 455px;
     padding: 10px;
-    margin-right: 10px;
     background-color: #558;
 }
 
-
+.program-column.first {
+    margin: 0 10px 0 0;
+}
 .program-column.last {
-    width: 294px;
-    margin-right: 0;
+    margin: 10px 0 0 0;
 }
 
 .program-listing li {
@@ -428,7 +428,7 @@ a.top-link#event-link.selected { background-color: #494; border-bottom-left-radi
 
 .program-listing .description {
     float: left;
-    width: 193px;
+    width: 350px;
 }
 
 .description p {
