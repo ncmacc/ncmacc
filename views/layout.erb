@@ -22,6 +22,7 @@
 	      <ul>
 		<% [["Advisory &amp; Board", "/about/board"],
 		   ["Faculty and Staff", "/about/faculty_and_staff"],
+		   ["Financial Reports", "/about/financial_reports"],
 		   ["Contact Us", "/about/contact_us"],
 		   ["FAQs", "/about/faqs"], ["Jobs", "/jobs"]].each do |name, path| %>
 		  <li><a href="<%= path %>"><%= name %></a></li>
@@ -112,7 +113,7 @@
 	<ul class="first">
 	  <li><h3><a href="/">NCMACC</a></h3></li>
 	  <% [["About", "/about"], ["Board", "/about/board"], ["Faculty and Staff", "/about/faculty_and_staff"], ["Contact Us", "/about/contact_us"],
-	     ["FAQs", "/about/faqs"], ["Donate", "/donate"], ["Registration", "/registration"], ["Jobs", "/jobs"]].each do |name, path| %>
+	     ["Financial Reports", "/about/financial_reports"], ["FAQs", "/about/faqs"], ["Donate", "/donate"], ["Registration", "/registration"], ["Jobs", "/jobs"]].each do |name, path| %>
 	  <li><a href="<%= path %>"><%= name %></a></li>
 	  <% end %>
 	</ul>
