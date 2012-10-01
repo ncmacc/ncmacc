@@ -3,7 +3,7 @@
   "position":"Board Chair",
   "job":"President of Tower Tour, Optima Investment"},
   
-  {"first_name":"Young",
+  {"first_name":"Young Mee",
   "last_name":"Moore",
   "position":"Secretary",
   "job":"President of Star Communications"},
@@ -27,6 +27,16 @@
   "last_name":"Chang",
   "position":"Board Member",
   "job":"President of Hyundai DigiTech, Seoul, Korea"},
+  
+  {"first_name":"Nam Chul",
+  "last_name":"Kim",
+  "position":"Board Member",
+  "job":"President of HostelTimes"},
+  
+  {"first_name":"Naja",
+  "last_name":"Lockwood",
+  "position":"Board Member",
+  "job":"Southeast Asian Art Consultant"},
   
   {"first_name":"Duke K.",
   "last_name":"Amaniampong",

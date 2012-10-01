@@ -28,12 +28,6 @@
   "courses_taught":"Piano",
   "education":"M.M. San Francisco Conservatory of Music "},
 
- {"first_name":"Diane",
-  "last_name":"Grubbe",
-  "image":"/images/faculty/grubbe-diane.jpg",
-  "courses_taught":"Flute",
-  "education":"M.M. San Francisco Conservatory of Music"},
-
  {"first_name":"Christina",
   "last_name":"Knudson",
   "image":"/images/faculty/knudson-christina.jpg",
@@ -46,15 +40,9 @@
   "courses_taught":["Violin", "Chamber Music"],
   "education":"M.M. Basel Conservatory of Music, Switzerland"},
 
- {"first_name":"Emily",
-  "last_name":"Botel",
-  "image":"/images/faculty/botel-emily.jpg",
-  "courses_taught":"Violin",
-  "education":["B.M. Cleveland Institute of Music", "M.M. San Francisco Conservatory of Music in May 2012"]},
-
  {"first_name":"Brian",
-  "last_name":"Autumn",
-  "image":"/images/faculty/autumn-brian.jpg",
+  "last_name":"Parra",
+  "image":"/images/faculty/parra-brian.jpg",
   "courses_taught":"Guitar",
   "education":"B.A. San Francisco State University"},
 
@@ -86,4 +74,23 @@
   "last_name":"Mauricio",
   "image":"/images/faculty/mauricio-brandon.jpg",
   "courses_taught":"Tae Kwon Do",
-  "education":"Korean Martial Arts Center, San Francisco"}]
+  "education":"Korean Martial Arts Center, San Francisco"},
+
+
+ {"first_name":"Aaron",
+  "last_name":"Pike",
+  "image":"/images/faculty/pike-aaron.jpg",
+  "courses_taught":["Chamber Music", "Piano"],
+  "education":"Graduate Student, San Francisco Conservatory of Music"},
+
+ {"first_name":"Natalie",
+  "last_name":"Carducci",
+  "image":"/images/faculty/carducci-natalie.jpg",
+  "courses_taught":"Violin",
+  "education":"Graduate Student, San Francisco Conservatory of Music"},
+
+ {"first_name":"Bordin Mark",
+  "last_name":"Marsinkul",
+  "image":"/images/faculty/marsinkul-bordin-mark.jpg",
+  "courses_taught":"Anime Art",
+  "education":"B.F.A. Academy of Art University"}]

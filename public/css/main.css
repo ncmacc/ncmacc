@@ -448,4 +448,12 @@ a.top-link#event-link.selected { background-color: #494; border-bottom-left-radi
     color: #FFF;
 }
 
+.question {
+    line-height: 1.25em;
+    color: #FFF;
+}
 
+.answer {
+    line-height: 1.25em;
+    margin: 0 0 1.25em 0;
+}
