@@ -264,6 +264,14 @@ h2.first {
     margin-left: 10px;
 }
 
+.split-70-30 .right.light {
+    background-color: #CCF;
+}
+
+.split-70-30 .right img {
+    max-width: 230px;
+}
+
 .copy p {
     margin-bottom: 10px;
 }
