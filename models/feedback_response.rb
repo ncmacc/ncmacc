@@ -23,7 +23,7 @@ class FeedbackResponse
 
   def deliver!
     
-    Pony.mail :to => "paul@sixofhearts.us", :from => "noreply@ncmacc.org",
+    Pony.mail :to => "feedback@ncmacc.org", :from => "robot@ncmacc.org",
               :subject => "[NCMACC] #{self.name} has Left Feedback",
               :body => self.body
   end
