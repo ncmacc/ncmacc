@@ -42,7 +42,8 @@ class Ncmacc < Sinatra::Base
 end
 
 MUSIC_PROGRAMS = [["Studio Program", "studio_program"],
-                  ["Chamber Music", "chamber_music"]]
+                  ["Chamber Music", "chamber_music"],
+                  ["Summer Band Class", "summer_band_class"]]
 
 PERFORMING_ARTS_PROGRAMS = [["Korean-American Youth Musical Group", "korean_american_youth_musical_group"]]
 #                            ["Fillmore Youth, Drum and Dance", "fillmore_youth_drum_and_dance"]]     
