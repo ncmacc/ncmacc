@@ -24,7 +24,7 @@ Pony.options = {
         :port                 => '587',
         :enable_starttls_auto => true,
         :user_name            => 'manservant@sixofhearts.us',
-        :password             => 'boilermagicmarkers',
+        :password             => ENV['SENDER_PASSWORD'],
         :authentication       => :plain,
         :domain               => 'sixofhearts.us'
   }
