@@ -30,6 +30,8 @@ Pony.options = {
   }
 }
 
+
+
 def time_until(start_time)
   event_time = Time.parse(start_time)
   current_time = Time.now
