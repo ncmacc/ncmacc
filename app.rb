@@ -5,6 +5,7 @@ require 'cgi'
 require 'uri'
 require 'net/http'
 require 'fileutils'
+require 'pony'
 
 # Rubygems
 require 'bundler'
@@ -16,19 +17,7 @@ require './ncmacc'
 require './models/feedback_response'
 require './models/worker'
 
-# Pony
-Pony.options = {
-  :via => :smtp,
-  :via_options => {
-        :address              => 'smtp.gmail.com',
-        :port                 => '587',
-        :enable_starttls_auto => true,
-        :user_name            => 'manservant@sixofhearts.us',
-        :password             => ENV['SENDER_PASSWORD'],
-        :authentication       => :plain,
-        :domain               => 'sixofhearts.us'
-  }
-}
+
 
 
 
