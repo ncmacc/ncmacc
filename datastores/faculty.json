@@ -16,6 +16,18 @@
   "courses_taught":"Piano",
   "education":"M.M. University of North Carolina School of the Arts"},
 
+ {"first_name":"Dulais",
+ "last_name":"Rhys",
+ "image":"/images/faculty/dulais-rhys.jpg",
+ "courses_taught":"Piano",
+ "education":"Ph.D University of Wales "},
+ 
+ {"first_name":"Julia Sarah",
+  "last_name":"Bonomo",
+  "image":"/images/faculty/julia-sarah.jpg",
+  "courses_taught":["Saxophone", "Clarinet"],
+ "education":"MM San Francisco Conservatory of Music"},
+
  {"first_name":"YoungSill",
   "last_name":"Ahn",
   "image":"/images/faculty/ahn-youngsill.jpg",
