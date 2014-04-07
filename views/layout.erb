@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title><%= "NCMACC" + (if @title then " :: #{@title}  " else "" end)   %></title>
-    <meta name="description" content="Northern California Music & Art Culture Center is a San Francisco based music education center. NCMACC offers private studio lessons in Piano, Voice, Violin, Viola, Cello, Guitar, and Drums.">
+    <%= '<meta name="description" content="'    + (if @description then "#{@description} " else "" end) +   '">'  %>
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
     <link href="/css/reset.css" rel="stylesheet" type="text/css">
@@ -228,10 +228,10 @@
 	<div id="topContact">
 	<img src="/images/icons/phone.png" alt="phone number" class="icon"/>
 	<p>(415) 751-6222</p>
-	<img src="/images/icons/mail.png" alt="phone number" class="icon" />
+	<img src="/images/icons/mail.png" alt="email" class="icon" />
 	<p>ncmacc@ncmacc.org</p>
 	<a href="https://www.google.com/maps/dir//Northern+California+Music+and+Art+Culture+Center,+3936+Geary+Blvd,+San+Francisco,+CA+94118/@37.781442,-122.461775,17z/data=!4m12!1m3!3m2!1s0x0:0x93a778f9446ac31a!2sNorthern+California+Music+and+Art+Culture+Center!4m7!1m0!1m5!1m1!1s0x808580bbe5a24655:0x93a778f9446ac31a!2m2!1d-122.461775!2d37.781442">
-	<img src="/images/icons/location.png" style="width:25px;" class="icon"><p>3936 Geary Blvd</p></a>
+	<img src="/images/icons/location.png" style="width:21px;" class="icon"><p>3936 Geary Blvd</p></a>
 	</div>
 	<ul id="top-navigation">
 	  <li class="item">

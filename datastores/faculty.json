@@ -15,12 +15,30 @@
   "image":"/images/faculty/bonvin-christian.jpg",
   "courses_taught":"Piano",
   "education":"M.M. University of North Carolina School of the Arts"},
+  
+   {"first_name":"Yougsill",
+  "last_name":"Ahn",
+  "image":"/images/faculty/youngsill-ahn.jpg",
+  "courses_taught":"Piano",
+  "education":"-"},
+  
+     {"first_name":"Maryam",
+  "last_name":"Mahvi",
+  "image":"/images/faculty/maryam-mahvi.jpg",
+  "courses_taught":"Piano",
+  "education":"-"},
 
  {"first_name":"Dulais",
  "last_name":"Rhys",
  "image":"/images/faculty/dulais-rhys.jpg",
  "courses_taught":"Piano",
  "education":"Ph.D University of Wales "},
+
+ {"first_name":"Anne",
+ "last_name":"Suda",
+ "image":"/images/faculty/anne-suda.jpg",
+ "courses_taught":"Viola",
+ "education":"-"},
  
  {"first_name":"Julia Sarah",
   "last_name":"Bonomo",
@@ -52,9 +70,9 @@
   "courses_taught":["Violin", "Chamber Music"],
   "education":"M.M. Basel Conservatory of Music, Switzerland"},
 
- {"first_name":"Brian",
-  "last_name":"Parra",
-  "image":"/images/faculty/parra-brian.jpg",
+ {"first_name":"James",
+  "last_name":"Khougaz",
+  "image":"/images/faculty/james-khougaz.jpg",
   "courses_taught":"Guitar",
   "education":"B.A. San Francisco State University"},
 
