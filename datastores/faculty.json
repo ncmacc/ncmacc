@@ -64,11 +64,6 @@
   "courses_taught":"Violin",
   "education":["M.M. San Francisco Conservatory of Music", "Suzuki Certification Violin Book 1 & 2"]},
 
- {"first_name":"Michele",
-  "last_name":"Walther",
-  "image":"/images/faculty/walther-michele.jpg",
-  "courses_taught":["Violin", "Chamber Music"],
-  "education":"M.M. Basel Conservatory of Music, Switzerland"},
 
  {"first_name":"James",
   "last_name":"Khougaz",
@@ -76,23 +71,8 @@
   "courses_taught":"Guitar",
   "education":"B.A. San Francisco State University"},
 
- {"first_name":"Peter",
-  "last_name":"Pearson",
-  "image":"/images/faculty/pearson-peter.jpg",
-  "courses_taught":"Cello",
-  "education":"M.M. San Francisco Conservatory of Music"},
 
- {"first_name":"Brian",
-  "last_name":"Kubes",
-  "image":"/images/faculty/kubes-brian.jpg",
-  "courses_taught":"Percussion",
-  "education":"B.A. St. Cloud State University"},
 
- {"first_name":"David",
-  "last_name":"Dieni",
-  "image":"/images/faculty/dieni-david.jpg",
-  "courses_taught":"Percussion",
-  "education":"M.M. San Francisco Conservatory of Music"},
 
  {"first_name":"Joy",
   "last_name":"Chung",
