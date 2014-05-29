@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%= "NCMACC" + (if @title then " :: #{@title}  " else "" end)   %></title>
+    <title><%= (if @title then "#{@title}  " else "" end)   %></title>
     <%= '<meta name="description" content="'    + (if @description then "#{@description} " else "" end) +   '">'  %>
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
