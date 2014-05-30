@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title><%= (if @title then "#{@title}  " else "" end)   %></title>
     <%= '<meta name="description" content="'    + (if @description then "#{@description} " else "" end) +   '">'  %>
+      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
     <link href="/css/reset.css" rel="stylesheet" type="text/css">
@@ -220,6 +221,18 @@
 </script>
   </head>
   <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  
+  
+  
+  
     <div class="header">
       <div class="content">
 	  <a href="/"><img src="/images/logo.png" alt=""  id="logo" /></a>
@@ -289,8 +302,17 @@
       <div class="content">
       
 
-     
-			<a href="http://www.yelp.com/biz/northern-california-music-and-art-culture-center-san-francisco" ><img src="/images/yelp.png" alt="yelp" style="height:36px;margin:0 auto;float:right;"/></a>
+   			<div id="social-toolbar">
+   			<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+   			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+   			<g:plusone href="http://ncmacc.org"></g:plusone>
+   			
+   			<a href="http://www.yelp.com/biz/northern-california-music-and-art-culture-center-san-francisco" ><img src="/images/yelp.png" alt="yelp" style="height:36px;margin:0 auto;float:right;"/></a>
+   			</div>
+
+			
 	</div>
     </div>
     <div class="main">
