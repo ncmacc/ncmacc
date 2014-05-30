@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title><%= (if @title then "#{@title}  " else "" end)   %></title>
     <%= '<meta name="description" content="'    + (if @description then "#{@description} " else "" end) +   '">'  %>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="icon" type="image/png" href="/images/favicon.png" alt="Favicon Image">
     <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
     <link href="/css/reset.css" rel="stylesheet" type="text/css">
     <link href="/css/clearfix.css" rel="stylesheet" type="text/css">
@@ -269,7 +269,7 @@
 	      <h3>WREACH OUT Recital an Art Exhibit</h3>
 		<li>
 		  <h4>December 13, 2012 3:30pm-5:00pm</h4>
-		  <h4><%= time_until "December 13, 2012 3:30pm PDT" %></h4>
+		 <!-- <h4><%= time_until "December 13, 2012 3:30pm PDT" %></h4>-->
 		</li>
 		<li>
 		  <a href="/events/wreach_out_recital_and_art_exhibit">More Information &rarr;</a>
@@ -354,7 +354,7 @@
 	  <li><a target="_blank" href="http://blog.ncmacc.org/">Blog</a></li>
 	</ul>
 	<div class="last">
-	  <h3>Northern California Music &amp; Art Culture Center</span></h3>
+	  <h3>Northern California Music &amp; Art Culture Center</h3>
 	  <p>
 	    3936 Geary Blvd.<br/>
 	    San Francisco, CA 94118<br/>
