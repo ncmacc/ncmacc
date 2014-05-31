@@ -124,6 +124,7 @@ a.top-link#programs-link.selected { background-color: #EA3; border-bottom-left-r
     padding: 10px 0;
     color: #DDF;
     height:16px;
+
 }
 
 
@@ -606,5 +607,11 @@ padding:10px;
 
 
 #social-toolbar{
-float:right;	
+float:right;
+height:36px;	
+overflow:hidden;
+}
+
+#___plusone_0{
+vertical-align:middle;
 }
