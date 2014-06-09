@@ -607,8 +607,10 @@ padding:10px;
 
 
 #social-toolbar{
+margin-top:5px;
+font-size:1px;
 float:right;
-height:36px;	
+height:26px;	
 overflow:hidden;
 }
 
