@@ -43,7 +43,6 @@ end
 
 MUSIC_PROGRAMS = [["Studio Program", "studio_program"],
                   ["Chamber Music", "chamber_music"],
-                  ["Early Childhood Music Class", "early_childhood_music_class"],
                   ["Summer Band Class", "summer_band_class"]]
 
 PERFORMING_ARTS_PROGRAMS = [["Korean-American Youth Musical Group", "korean_american_youth_musical_group"]]

@@ -2,19 +2,250 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%= (if @title then "#{@title} :: " else "" end) + "Northern California Music &amp; Art Culture Center" %></title>
+    <title><%= (if @title then "#{@title}  " else "" end)   %></title>
+    <%= '<meta name="description" content="'    + (if @description then "#{@description} " else "" end) +   '">'  %>
+      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
     <link href="/css/reset.css" rel="stylesheet" type="text/css">
     <link href="/css/clearfix.css" rel="stylesheet" type="text/css">
     <link href="/css/main.css" rel="stylesheet" type="text/css">
+    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="/js/application.js" type="text/javascript"></script>
+    
+    <!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="/plugins/fancyapps-fancyBox-18d1712/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="/plugins/fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/plugins/fancyapps-fancyBox-18d1712/source/jquery.fancybox.pack.js"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="/plugins/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/plugins/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-buttons.js"></script>
+<script type="text/javascript" src="/plugins/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-media.js"></script>
+
+<link rel="stylesheet" href="/plugins/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/plugins/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12031732-2', 'ncmacc.org');
+  ga('send', 'pageview');
+
+
+
+</script>
   </head>
   <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  
+  
+  
+  
     <div class="header">
       <div class="content">
-	<a href="/"><img src="/images/logo.png" alt="" style="width: 150px" /></a>
+	  <a href="/"><img src="/images/logo.png" alt=""  id="logo" /></a>
+	 <!-- <div id="location"> <img src="/images/icons/location.png" style="width:25px;" class="icon"><p>3936 Geary Blvd</p></div>-->
+	  
+	<div id="topContact">
+	<img src="/images/icons/phone.png" alt="phone number" class="icon"/>
+	<p>(415) 751-6222</p>
+	<img src="/images/icons/mail.png" alt="email" class="icon" />
+	<p>ncmacc@ncmacc.org</p>
+	<a href="https://www.google.com/maps/dir//Northern+California+Music+and+Art+Culture+Center,+3936+Geary+Blvd,+San+Francisco,+CA+94118/@37.781442,-122.461775,17z/data=!4m12!1m3!3m2!1s0x0:0x93a778f9446ac31a!2sNorthern+California+Music+and+Art+Culture+Center!4m7!1m0!1m5!1m1!1s0x808580bbe5a24655:0x93a778f9446ac31a!2m2!1d-122.461775!2d37.781442">
+	<img src="/images/icons/location.png" style="width:21px;" class="icon" alt="get directions"> <p>3936 Geary Blvd</p></a>
+	</div>
 	<ul id="top-navigation">
 	  <li class="item">
 	    <a class="top-link" id="about-link" style="" href="/about">About Us</a>
@@ -47,16 +278,15 @@
 	  <li class="item">
 	    <a class="top-link" id="event-link" href="/events">Events</a>
 	    <div id="event-dropdown">
-	      <ul class="fundraiser last">
+	    
 	      <h3>WREACH OUT Recital an Art Exhibit</h3>
-		<li>
+		
 		  <h4>December 13, 2012 3:30pm-5:00pm</h4>
-		  <h4><%= time_until "December 13, 2012 3:30pm PDT" %></h4>
-		</li>
-		<li>
+		 <!-- <h4><%= time_until "December 13, 2012 3:30pm PDT" %></h4>-->
+		
+		
 		  <a href="/events/wreach_out_recital_and_art_exhibit">More Information &rarr;</a>
-		</li>
-	      </ul>
+		
 	    </div>
 	  </li>
 	  <li class="item">
@@ -68,12 +298,33 @@
 	</ul>
       </div>
     </div>
-    <div class="main-across">
+    <div class="main-across" style="padding:0;height:36px;">
       <div class="content">
-	<p>
-	  Fostering community through music and art.
-	</p>
-      </div>
+      
+			<a href="http://www.yelp.com/biz/northern-california-music-and-art-culture-center-san-francisco" ><img src="/images/yelp.png" alt="yelp" style="height:36px;margin:0 auto;float:right;"/></a>
+   	
+   			<div id="social-toolbar" >
+   			
+   			<div style="display:inline-block;vertical-align:middle"><div id="pinterest" >
+   			<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" alt="pin to pinterest"/></a>
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+			</div></div>
+
+   			<div style="display:inline-block;vertical-align:middle"><div  class="fb-like" style="vertical-align:middle" data-href="http://ncmacc.org" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></div>
+   			<div style="display:inline-block;vertical-align:middle"><div class="g-plusone" data-href="http://ncmacc.org"></div></div>
+   			
+   			
+   			</div>
+   			
+<script>
+			$( "#social-toolbar" ).load(function() {
+			//$("#social-toolbar").css("visibility", "");
+			alert("ass");
+			});
+			</script>
+			
+	</div>
     </div>
     <div class="main">
       <%= yield %>
@@ -134,7 +385,7 @@
 	  <li><a target="_blank" href="http://blog.ncmacc.org/">Blog</a></li>
 	</ul>
 	<div class="last">
-	  <h3>Northern California Music &amp; Art Culture Center</span></h3>
+	  <h3>Northern California Music &amp; Art Culture Center</h3>
 	  <p>
 	    3936 Geary Blvd.<br/>
 	    San Francisco, CA 94118<br/>
